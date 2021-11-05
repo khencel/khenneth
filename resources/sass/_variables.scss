@@ -1,0 +1,145 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+.purple{
+    color: $purple;
+}
+
+.orange{
+    color: $orange;
+}
+
+.cyan{
+    color: $cyan;
+}
+
+.material {
+	position: relative;
+	padding: 0;
+	margin: 5px;
+	border: none;
+	overflow: visible;
+	
+	input {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 12px 10px 8px;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		border-bottom: 1px solid #DDD;
+		font-size: 120%;
+		outline: none;
+		cursor: text;
+
+		&::-webkit-input-placeholder {
+			transition: color 300ms ease;
+		}
+		&:not(:focus)::-webkit-input-placeholder {
+			color: transparent;
+		}
+	}
+	
+	hr {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 2px;
+		border: none;
+		background: #607D8B;
+		font-size: 1px;
+		will-change: transform, visibility;
+		transition: all 200ms ease-out;
+		transform: scaleX(0);
+		visibility: hidden;
+		z-index: 10;
+	}
+	input:focus ~ hr {
+		transform: scaleX(1);
+		visibility: visible;
+	}
+	
+	label {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font-size: 120%;
+		color: #607D8B;
+		transform-origin: 0 -150%;
+		transition: transform 300ms ease;
+		pointer-events: none;
+	}
+	input:focus ~ label,
+	input:valid ~ label {
+		transform: scale(0.6);
+	}
+}
+
+.button-success{
+    background-color: #FA0018 !important;
+    border: none;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.button-success:hover{
+   background-color: #652b31 !important;
+}
+
+.button-primary{
+    background-color: #00B0F9 !important;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.button-primary:hover{
+   background-color: #235a71 !important;
+}
+
+.background-success{
+	background-color: #FA0018;
+}
+
+.background-primary{
+	background-color: #00B0F9;
+}
+
+.side-tab{
+	writing-mode: vertical-rl;
+	-webkit-transform: rotate(180deg);   
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.button-disable{
+	background-color: #16252c !important;
+}
+
+
